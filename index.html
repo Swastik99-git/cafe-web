@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMBRE — Crafted With Passion, Served With Love</title>
+<meta name="description" content="AMBRE Coffee House — a luxury café atmosphere serving single-origin espresso, slow-brewed pours and quiet evenings since 2014.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <svg viewBox="0 0 120 140">
+    <path class="steam-path" d="M50 90 Q40 75 50 60 Q60 45 50 30" />
+    <path class="steam-path" d="M65 90 Q55 75 65 60 Q75 45 65 30" />
+    <path class="steam-path" d="M80 90 Q70 75 80 60 Q90 45 80 30" />
+  </svg>
+  <div class="loader-word">AMBRE</div>
+  <div class="loader-bar"><i></i></div>
+</div>
+
+<!-- PROGRESS -->
+<div id="progress-rail"><div id="progress-fill"></div><span>Scroll</span></div>
+
+<!-- NAV -->
+<header>
+  <a href="#hero" class="logo">AMBRE <em>coffee</em></a>
+  <nav id="nav">
+    <ul>
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#reserve" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="header-right">
+    <button class="theme-toggle magnetic" id="themeToggle" aria-label="Toggle light and dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+    </button>
+    <a href="#reserve" class="nav-cta btn-outline" style="display:inline-block;">Reserve</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div id="hero-bg"></div>
+  <div id="beans-layer"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow reveal">est. 2014 — bhubaneswar</div>
+      <h1 class="reveal">Crafted With<br>Passion, <i>Served</i><br>With Love.</h1>
+    </div>
+    <div class="hero-side reveal">
+      <p>A quiet room for slow mornings and slower evenings — single-origin beans, hand-poured, and a menu built around patience rather than speed.</p>
+      <div class="cta-row">
+        <a href="#menu" class="btn btn-fill magnetic">Explore Menu</a>
+        <a href="#reserve" class="btn btn-outline magnetic">Reserve Table</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="line"><i></i></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-imgwrap reveal">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop" alt="Barista pouring latte art in a dim, wood-toned café">
+      </div>
+      <div class="about-tag">Since<br>2014</div>
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow reveal">Our Story</div>
+      <h2 class="title reveal">A house built<br>around the <i>ritual</i><br>of coffee.</h2>
+      <p class="lede reveal">AMBRE began as a single roasting bench in a converted warehouse. Twelve years on, we still roast in small batches, cup every lot before it reaches a cup, and design every room to slow people down — low light, warm wood, and conversation worth lingering over.</p>
+      <div class="stats">
+        <div class="reveal">
+          <div class="stat-num" data-count="10"><span class="num">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num" data-count="50"><span class="num">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Coffee Variants</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num" data-count="5000"><span class="num">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider reveal"><i></i></div></div>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <div>
+        <div class="eyebrow reveal">The Menu</div>
+        <h2 class="title reveal">Made slow,<br>poured with <i>care</i>.</h2>
+      </div>
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="espresso">Espresso</button>
+        <button class="filter-btn" data-filter="latte">Latte</button>
+        <button class="filter-btn" data-filter="cappuccino">Cappuccino</button>
+        <button class="filter-btn" data-filter="coldbrew">Cold Brew</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section id="featured">
+  <div class="wrap">
+    <div class="featured-card reveal">
+      <div class="featured-bg"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1400&auto=format&fit=crop" alt="Coffee of the month, dark roast with caramel notes"></div>
+      <div class="featured-content">
+        <div class="eyebrow">Coffee of the Month</div>
+        <h3>Ember & Caramel<br>Reserve</h3>
+        <p>A barrel-aged Ethiopian lot, finished with a whisper of cask caramel. Notes of dark cherry, toasted hazelnut and a long, smoky finish — available only through this season.</p>
+        <a href="#menu" class="btn btn-outline magnetic">Taste the Reserve</a>
+      </div>
+      <div class="steam-wrap">
+        <svg viewBox="0 0 120 280">
+          <path class="steam-line s1" d="M30 260 Q15 220 30 180 Q45 140 30 100" />
+          <path class="steam-line s2" d="M60 260 Q45 220 60 180 Q75 140 60 100" />
+          <path class="steam-line s3" d="M90 260 Q75 220 90 180 Q105 140 90 100" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="eyebrow reveal">Inside AMBRE</div>
+    <h2 class="title reveal">Moments, brewed<br>and held.</h2>
+    <div class="masonry" id="masonry" style="margin-top:60px;"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap" style="text-align:center;">
+    <div class="eyebrow reveal" style="justify-content:center;">Testimonials</div>
+    <h2 class="title reveal">Loved by our<br>regulars.</h2>
+    <div class="t-stage" id="tStage"></div>
+    <div class="t-dots" id="tDots"></div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section id="reserve">
+  <div class="wrap reserve-grid">
+    <div class="reserve-info">
+      <div class="eyebrow reveal">Reservations</div>
+      <h2 class="title reveal">Hold a table<br>for the <i>evening</i>.</h2>
+      <p class="lede reveal">Seats are limited and the room is intentionally quiet — we recommend booking at least a day ahead for weekend evenings.</p>
+      <div class="info-list reveal">
+        <div><span>Mon — Fri</span><b>7:00 AM – 10:00 PM</b></div>
+        <div><span>Sat — Sun</span><b>8:00 AM – 11:00 PM</b></div>
+        <div><span>Phone</span><b>+91 98765 43210</b></div>
+      </div>
+    </div>
+    <form class="form-card reveal" id="resForm">
+      <div class="form-row">
+        <div class="field"><input type="text" required placeholder=" "><label>Full Name</label></div>
+        <div class="field"><input type="email" required placeholder=" "><label>Email Address</label></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><input type="date" required placeholder=" "><label>Date</label></div>
+        <div class="field"><input type="time" required placeholder=" "><label>Time</label></div>
+      </div>
+      <div class="field select-field">
+        <select required>
+          <option value="" disabled selected hidden> </option>
+          <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4+ Guests</option>
+        </select>
+        <label>Guests</label>
+      </div>
+      <button type="submit" class="btn btn-fill submit-btn magnetic">Confirm Reservation</button>
+    </form>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="wrap news-box">
+    <div class="eyebrow reveal" style="justify-content:center;">Stay Close</div>
+    <h2 class="title reveal">New roasts, first<br>to your inbox.</h2>
+    <form class="news-form reveal" id="newsForm">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">AMBRE <em>coffee</em></div>
+        <p>A quiet house for slow coffee, set in the heart of Bhubaneswar since 2014.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <a href="#hero">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <div>Mon – Fri · 7am – 10pm</div>
+        <div>Sat – Sun · 8am – 11pm</div>
+      </div>
+      <div class="foot-col">
+        <h4>Visit</h4>
+        <div>12 Saheed Nagar</div>
+        <div>Bhubaneswar, Odisha</div>
+        <div>hello@ambre.coffee</div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 AMBRE Coffee House. All rights reserved.</span>
+      <span>Crafted with passion, served with love.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="lightbox"><span class="close">Close ✕</span><img src="" alt=""></div>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+/* ============ DATA ============ */
+const dishes = [
+  {cat:'espresso', name:'Classic Espresso', desc:'Double shot, dark cocoa and stone fruit notes.', price:'₹180', img:'https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?q=80&w=600&auto=format&fit=crop'},
+  {cat:'espresso', name:'Ristretto', desc:'Short, syrupy pull with a velvet finish.', price:'₹190', img:'https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=600&auto=format&fit=crop'},
+  {cat:'latte', name:'Vanilla Bean Latte', desc:'Steamed milk, Madagascar vanilla, soft foam.', price:'₹260', img:'https://images.unsplash.com/photo-1561882468-9110e03e0f78?q=80&w=600&auto=format&fit=crop'},
+  {cat:'latte', name:'Honey Oat Latte', desc:'Oat milk, wild honey, cinnamon dust.', price:'₹270', img:'https://images.unsplash.com/photo-1572286258217-215a8b1d10fc?q=80&w=600&auto=format&fit=crop'},
+  {cat:'cappuccino', name:'Signature Cappuccino', desc:'Equal thirds espresso, milk and microfoam.', price:'₹240', img:'https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=600&auto=format&fit=crop'},
+  {cat:'cappuccino', name:'Cardamom Cappuccino', desc:'House blend with whole cardamom pods.', price:'₹250', img:'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=600&auto=format&fit=crop'},
+  {cat:'coldbrew', name:'Slow Cold Brew', desc:'18-hour steep, served over hand-cut ice.', price:'₹230', img:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600&auto=format&fit=crop'},
+  {cat:'coldbrew', name:'Nitro Cold Brew', desc:'Cascading texture, naturally sweet and creamy.', price:'₹280', img:'https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=600&auto=format&fit=crop'},
+  {cat:'desserts', name:'Burnt Basque Cheesecake', desc:'Caramelised top, soft molten centre.', price:'₹320', img:'https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=600&auto=format&fit=crop'},
+  {cat:'desserts', name:'Espresso Tiramisu', desc:'Mascarpone, cocoa, soaked ladyfingers.', price:'₹300', img:'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600&auto=format&fit=crop'},
+];
+
+const galleryImgs = [
+  {src:'https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=700&auto=format&fit=crop', cap:'The Roasting Bench'},
+  {src:'https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=700&auto=format&fit=crop', cap:'Window Seat, 8AM'},
+  {src:'https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=500&auto=format&fit=crop', cap:'Pour Over Ritual'},
+  {src:'https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=700&auto=format&fit=crop', cap:'Latte Art Study'},
+  {src:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=700&auto=format&fit=crop', cap:'The Bar at Dusk'},
+  {src:'https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=500&auto=format&fit=crop', cap:'Single Origin Lot'},
+  {src:'https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=700&auto=format&fit=crop', cap:'Slow Mornings'},
+  {src:'https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=700&auto=format&fit=crop', cap:'Evening Crowd'},
+];
+
+const testimonials = [
+  {q:'AMBRE feels like the only café in the city that isn’t in a hurry. The cardamom cappuccino is reason enough to come back.', name:'Ritika Sahoo', role:'Regular, 3 years', img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop'},
+  {q:'Every visit feels considered — the lighting, the playlist, the pour. It’s the kind of place you bring people you actually like.', name:'Aniket Rao', role:'Local Designer', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop'},
+  {q:'Their cold brew ruined every other cold brew for me. Eighteen hours well spent.', name:'Meher Das', role:'Food Writer', img:'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop'},
+];
+
+/* ============ THEME TOGGLE ============ */
+const themeToggle = document.getElementById('themeToggle');
+const rootEl = document.documentElement;
+let currentTheme = 'dark';
+themeToggle.addEventListener('click', ()=>{
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  gsap.to('body', { opacity:0.55, duration:0.22, ease:'power1.in', onComplete:()=>{
+    rootEl.setAttribute('data-theme', currentTheme);
+    gsap.to('body', { opacity:1, duration:0.45, ease:'power1.out' });
+  }});
+});
+
+/* ============ LOADER ============ */
+const loaderTl = gsap.timeline({
+  onComplete: () => {
+    document.getElementById('loader').style.pointerEvents = 'none';
+    initReveals();
+  }
+});
+loaderTl.to('.steam-path', { opacity:1, duration:1, stagger:0.15, ease:'sine.out' })
+  .to('.steam-path', { attr:{d: (i)=> ['M50 90 Q40 60 50 35 Q60 10 50 -10','M65 90 Q55 60 65 35 Q75 10 65 -10','M80 90 Q70 60 80 35 Q90 10 80 -10'][i]}, duration:2.2, ease:'sine.inOut' }, '-=0.3')
+  .to('.loader-word', { opacity:1, y:-6, duration:0.8, ease:'power2.out' }, '-=1.8')
+  .to('.loader-bar i', { width:'100%', duration:1.6, ease:'power1.inOut' }, '-=1.6')
+  .to('#loader', { autoAlpha:0, duration:0.9, ease:'power2.inOut' }, '+=0.2')
+  .from('header', { y:-30, opacity:0, duration:0.9, ease:'power2.out' }, '-=0.5')
+  .from(['.hero-eyebrow','.hero h1','.hero-side'], { y:40, opacity:0, filter:'blur(8px)', stagger:0.15, duration:1.1, ease:'power3.out' }, '-=0.5');
+
+/* ============ LENIS SMOOTH SCROLL ============ */
+let lenis;
+try{
+  lenis = new Lenis({ duration:1.15, easing:(t)=>Math.min(1,1.001-Math.pow(2,-10*t)), smoothWheel:true });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add((time)=>{ lenis.raf(time*1000); });
+  gsap.ticker.lagSmoothing(0);
+}catch(e){ console.warn('Lenis unavailable', e); }
+
+/* ============ CUSTOM CURSOR ============ */
+const dot = document.querySelector('.cursor-dot');
+const ring = document.querySelector('.cursor-ring');
+let mx=innerWidth/2,my=innerHeight/2, rx=mx, ry=my;
+window.addEventListener('mousemove', e=>{ mx=e.clientX; my=e.clientY; dot.style.left=mx+'px'; dot.style.top=my+'px'; });
+gsap.ticker.add(()=>{ rx += (mx-rx)*0.16; ry += (my-ry)*0.16; ring.style.left=rx+'px'; ring.style.top=ry+'px'; });
+document.querySelectorAll('a,button,.dish,.masonry figure').forEach(el=>{
+  el.addEventListener('mouseenter', ()=>ring.classList.add('active'));
+  el.addEventListener('mouseleave', ()=>ring.classList.remove('active'));
+});
+
+/* ============ MAGNETIC BUTTONS ============ */
+document.querySelectorAll('.magnetic').forEach(btn=>{
+  btn.addEventListener('mousemove', (e)=>{
+    const r = btn.getBoundingClientRect();
+    const x = e.clientX - r.left - r.width/2;
+    const y = e.clientY - r.top - r.height/2;
+    gsap.to(btn, { x:x*0.35, y:y*0.45, duration:0.5, ease:'power3.out' });
+  });
+  btn.addEventListener('mouseleave', ()=>{ gsap.to(btn, { x:0, y:0, duration:0.6, ease:'elastic.out(1,0.4)' }); });
+});
+
+/* ============ NAV ============ */
+const header = document.querySelector('header');
+ScrollTrigger.create({ start:50, end:99999, onUpdate:(self)=> header.classList.toggle('scrolled', self.scroll()>50) });
+const burger = document.getElementById('burger'), nav = document.getElementById('nav');
+burger.addEventListener('click', ()=> nav.classList.toggle('open'));
+document.querySelectorAll('.nav-link').forEach(link=>{
+  link.addEventListener('click', ()=> nav.classList.remove('open'));
+});
+const sections = ['hero','menu','about','gallery','testimonials','reserve'];
+sections.forEach(id=>{
+  ScrollTrigger.create({
+    trigger: '#'+id, start:'top 50%', end:'bottom 50%',
+    onEnter: ()=>setActive(id), onEnterBack: ()=>setActive(id)
+  });
+});
+function setActive(id){
+  document.querySelectorAll('.nav-link').forEach(a=> a.classList.toggle('active', a.getAttribute('href')==='#'+id));
+}
+
+/* ============ SCROLL PROGRESS ============ */
+gsap.to('#progress-fill', {
+  height:'100%', ease:'none',
+  scrollTrigger:{ trigger:document.body, start:'top top', end:'bottom bottom', scrub:0.3 }
+});
+
+/* ============ BEANS PARALLAX (HERO) ============ */
+const beansLayer = document.getElementById('beans-layer');
+const beanCount = window.innerWidth < 700 ? 9 : 16;
+for(let i=0;i<beanCount;i++){
+  const b = document.createElement('div');
+  b.className='bean';
+  const size = 10+Math.random()*16;
+  b.style.left = Math.random()*100+'%';
+  b.style.top = Math.random()*100+'%';
+  b.style.width = size+'px'; b.style.height=(size*1.3)+'px';
+  b.innerHTML = `<svg viewBox="0 0 24 30" width="100%" height="100%"><path d="M12 1C6 1 1 8 1 16c0 8 5 13 11 13s11-5 11-13C23 8 18 1 12 1z" fill="#3a2a1d" stroke="#6F4E37" stroke-width="0.6"/><path d="M12 4c-3 4-3 18 0 22" stroke="#1a120c" stroke-width="1" fill="none"/></svg>`;
+  beansLayer.appendChild(b);
+  gsap.to(b, { y: '+=' + (20+Math.random()*30), x:'+='+(Math.random()*20-10), rotation: Math.random()*40-20, duration: 6+Math.random()*6, repeat:-1, yoyo:true, ease:'sine.inOut', delay:Math.random()*3 });
+}
+
+/* hero mouse depth */
+const heroBg = document.getElementById('hero-bg');
+document.getElementById('hero').addEventListener('mousemove', (e)=>{
+  const x = (e.clientX/innerWidth - 0.5)*22;
+  const y = (e.clientY/innerHeight - 0.5)*16;
+  gsap.to(heroBg, { x:x, y:y, duration:1.2, ease:'power3.out' });
+  gsap.to(beansLayer, { x:x*1.8, y:y*1.8, duration:1.4, ease:'power3.out' });
+});
+gsap.to(heroBg, { scale:1.0, y:'-6%', ease:'none', scrollTrigger:{ trigger:'#hero', start:'top top', end:'bottom top', scrub:true } });
+
+/* ============ STATS COUNT ============ */
+document.querySelectorAll('.stat-num').forEach(el=>{
+  const target = +el.dataset.count;
+  const num = el.querySelector('.num');
+  ScrollTrigger.create({
+    trigger: el, start:'top 85%', once:true,
+    onEnter: ()=> gsap.to({v:0}, { v:target, duration:2, ease:'power2.out', onUpdate:function(){ num.textContent = Math.floor(this.targets()[0].v).toLocaleString(); } })
+  });
+});
+
+/* ============ MENU RENDER + FILTER ============ */
+const menuGrid = document.getElementById('menuGrid');
+function renderDishes(filter){
+  menuGrid.innerHTML='';
+  dishes.filter(d=> filter==='all' || d.cat===filter).forEach((d, i)=>{
+    const el = document.createElement('div');
+    el.className='dish reveal';
+    el.innerHTML = `<div class="dish-imgwrap"><img src="${d.img}" alt="${d.name}" loading="lazy"></div>
+      <div class="dish-top"><h3>${d.name}</h3><span class="dish-price">${d.price}</span></div>
+      <p>${d.desc}</p>`;
+    menuGrid.appendChild(el);
+  });
+  gsap.fromTo(menuGrid.children, { y:30, opacity:0 }, { y:0, opacity:1, duration:0.7, stagger:0.06, ease:'power3.out' });
+}
+renderDishes('all');
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    renderDishes(btn.dataset.filter);
+  });
+});
+
+/* ============ GALLERY MASONRY ============ */
+const masonry = document.getElementById('masonry');
+galleryImgs.forEach(g=>{
+  const fig = document.createElement('figure');
+  fig.className='reveal';
+  fig.innerHTML = `<img src="${g.src}" alt="${g.cap}" loading="lazy"><figcaption>${g.cap}</figcaption>`;
+  fig.addEventListener('click', ()=> openLightbox(g.src, g.cap));
+  masonry.appendChild(fig);
+});
+const lightbox = document.getElementById('lightbox');
+function openLightbox(src, alt){
+  lightbox.querySelector('img').src = src;
+  lightbox.querySelector('img').alt = alt;
+  lightbox.classList.add('show');
+}
+lightbox.addEventListener('click', ()=> lightbox.classList.remove('show'));
+
+/* ============ TESTIMONIALS SLIDER ============ */
+const tStage = document.getElementById('tStage');
+const tDots = document.getElementById('tDots');
+testimonials.forEach((t,i)=>{
+  const card = document.createElement('div');
+  card.className = 't-card' + (i===0?' active':'');
+  card.innerHTML = `<div class="stars">★★★★★</div><p class="t-quote">“${t.q}”</p>
+    <div class="t-person"><img src="${t.img}" alt="${t.name}"><div><div class="name">${t.name}</div><div class="role">${t.role}</div></div></div>`;
+  tStage.appendChild(card);
+  const dot = document.createElement('button');
+  if(i===0) dot.classList.add('active');
+  dot.addEventListener('click', ()=> showTestimonial(i));
+  tDots.appendChild(dot);
+});
+let tIndex=0;
+function showTestimonial(i){
+  const cards = tStage.querySelectorAll('.t-card');
+  const dots = tDots.querySelectorAll('button');
+  gsap.to(cards[tIndex], { opacity:0, y:-14, duration:0.5, ease:'power2.in', onComplete:()=>{
+    cards[tIndex].classList.remove('active');
+    cards[i].classList.add('active');
+    gsap.fromTo(cards[i], { opacity:0, y:14 }, { opacity:1, y:0, duration:0.7, ease:'power2.out' });
+  }});
+  dots[tIndex].classList.remove('active'); dots[i].classList.add('active');
+  tIndex = i;
+}
+setInterval(()=> showTestimonial((tIndex+1)%testimonials.length), 5500);
+
+/* ============ FORM INPUTS (label float for date/time always-filled look) ============ */
+document.querySelectorAll('.field input, .field select').forEach(inp=>{
+  inp.addEventListener('focus', ()=> inp.closest('.field').classList.add('filled'));
+  inp.addEventListener('blur', ()=> { if(!inp.value) inp.closest('.field').classList.remove('filled'); });
+  if(inp.type==='date' || inp.type==='time') inp.closest('.field').classList.add('filled');
+});
+document.getElementById('resForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const btn = e.target.querySelector('.submit-btn');
+  btn.textContent = 'Table Reserved ✓';
+  setTimeout(()=> btn.textContent = 'Confirm Reservation', 2800);
+});
+document.getElementById('newsForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.textContent = 'Subscribed ✓';
+  setTimeout(()=> btn.textContent = 'Subscribe →', 2600);
+});
+
+/* ============ SCROLL REVEALS ============ */
+function initReveals(){
+  gsap.utils.toArray('.reveal').forEach(el=>{
+    if(el.closest('#hero')) return; // hero handled by loader timeline
+    gsap.fromTo(el, { y:46, opacity:0, filter:'blur(10px)' }, {
+      y:0, opacity:1, filter:'blur(0px)', duration:1.1, ease:'power3.out',
+      scrollTrigger:{ trigger:el, start:'top 88%' }
+    });
+  });
+  // stagger groups
+  gsap.utils.toArray('.stats .reveal').forEach((el,i)=>{
+    gsap.to(el, { delay:i*0.12, scrollTrigger:{ trigger:el, start:'top 90%' } });
+  });
+
+  // image scale-on-scroll
+  gsap.utils.toArray('.about-imgwrap img, .featured-bg img').forEach(img=>{
+    gsap.fromTo(img, { scale:1.18 }, { scale:1, ease:'none', scrollTrigger:{ trigger:img, start:'top bottom', end:'bottom top', scrub:true } });
+  });
+
+  // divider sweep
+  gsap.utils.toArray('.divider i').forEach(i=>{
+    gsap.to(i, { left:'100%', duration:1.6, ease:'power2.inOut', scrollTrigger:{ trigger:i, start:'top 90%' } });
+  });
+
+  ScrollTrigger.refresh();
+}
+
+/* float hero image gently (in case of supplemental art) */
+gsap.to('.about-tag', { y:-14, duration:3.2, repeat:-1, yoyo:true, ease:'sine.inOut' });
+</script>
+</body>
+</html>
