@@ -39,7 +39,8 @@ A modern, elegant, and fully responsive coffee shop landing page built using **H
 ```text
 Coffee-Landing-Page/
 │── index.html
-│── style.css
+│── index.css
+|-- index.js
 └── README.md
 ```
 
