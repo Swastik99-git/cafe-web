@@ -51,13 +51,7 @@ Coffee-Landing-Page/
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/coffee-landing-page.git
-```
-
-Go to the project folder
-
-```bash
-cd coffee-landing-page
+git clone https://github.com/Swastik99-git/cafe-web.git
 ```
 
 Open `index.html` in your browser.
