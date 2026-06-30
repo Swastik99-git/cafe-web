@@ -129,6 +129,7 @@ for(let i=0;i<beanCount;i++){
   beansLayer.appendChild(b);
   gsap.to(b, { y: '+=' + (20+Math.random()*30), x:'+='+(Math.random()*20-10), rotation: Math.random()*40-20, duration: 6+Math.random()*6, repeat:-1, yoyo:true, ease:'sine.inOut', delay:Math.random()*3 });
 }
+// -------
 
 /* hero mouse depth */
 const heroBg = document.getElementById('hero-bg');
